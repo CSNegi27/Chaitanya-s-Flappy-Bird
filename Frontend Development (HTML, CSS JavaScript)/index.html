@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="game-container">
+        <div id="bird"></div>
+
+        <div id="score">Score: 0</div>
+
+        <div id="game-over">
+            <h2>Game Over</h2>
+            <button id="retry-button">Retry</button>
+        </div>
+
+        <!-- Pipes -->
+        <div class="pipe" style="height: 250px; top: 0; left: 500px; transform: rotate(180deg)"></div>
+        <div class="pipe" style="height: 150px; top: 400px; left: 700px"></div>
+
+
+        <!-- Game Title -->
+        <div id="the-flappy-bird">Chaitanya's Flappy Bird</div>
+
+        <!-- Instructions -->
+        <div id="instructions">
+            <h2>Instructions</h2>
+            <p>Press any key to make the bird jump!</p>
+            <p>Avoid the pipes to score points!</p>
+            <button id="start-btn">Start Game</button>
+        </div>
+    </div>
+
+    <!-- Sound -->
+    <audio id="flap-sound" src="flap.mp3"></audio>
+    <audio id="die-sound" src="die.mp3"></audio>
+    <audio id="hit-sound" src="hit.mp3"></audio>
+    <audio id="point-sound" src="point.mp3"></audio>
+    <audio id="swoosh-sound" src="swoosh.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
